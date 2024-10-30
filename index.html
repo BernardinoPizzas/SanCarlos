@@ -384,7 +384,7 @@
         <input type="radio" name="orderType" value="retiro" onclick="toggleFields()"> Retiro
     </label>
     <label>
-        <input type="radio" name="orderType" value="envio" onclick="toggleFields()"> Envío (+$1100)
+        <input type="radio" name="orderType" value="envio" onclick="toggleFields()"> Envío (+$800)
     </label>
     <div id="address-field" style="display:none;">
         <input type="text" id="address" placeholder="Ingrese su dirección">
@@ -424,7 +424,7 @@
 
     let orderDetails = [];
     let total = 0;
-    let deliveryFee = document.querySelector('input[name="orderType"]:checked').value === 'envio' ? 1100 : 0;
+    let deliveryFee = document.querySelector('input[name="orderType"]:checked').value === 'envio' ? 800 : 0;
 
     const pizzas = ['muzzarella', 'cebollada', 'provenzal', 'nevada', 'morrones', 'napolitana', 'rucula', 'jamon', 'especial', 'calabresa', 
                    'formaggi', 'capresse', 'anchoas', 'palmitos', 'carioca', 'prosciutto', 'granjera', 'alemana', 'verduras', 
